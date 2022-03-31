@@ -9,6 +9,38 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock
+            Margin="0, 100, 0, 0"
+            FontSize="40"
+            HorizontalAlignment="Center"
+            FontWeight="Bold"
+            Grid.Column="0">
+            Vasen puoli!
+        </TextBlock>
+
+        <TextBlock
+            Margin="0, 100, 0, 0"
+            FontSize="40"
+            HorizontalAlignment="Center"
+            FontWeight="Bold"
+            Grid.Column="1">
+            Oikea puoli!
+        </TextBlock>
+        <Rectangle
+            Grid.Column="0"
+            Fill="Tomato" Canvas.ZIndex="-1"
+            />
+
+        <Rectangle
+            Grid.Column="1"
+            Fill="Bisque" Canvas.ZIndex="-1"
+            />
+
 
     </Grid>
 </Page>
